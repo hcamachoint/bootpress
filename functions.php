@@ -75,11 +75,6 @@ function customizable_colors( $wp_customize ) {
 		'transport' => 'refresh',
 	));
 
-  $wp_customize->add_setting('bg-fa', array(
-		'default' => '#cbc5c1',
-		'transport' => 'refresh',
-	));
-
   $wp_customize->add_setting('bg-subheader', array(
 		'default' => '#000',
 		'transport' => 'refresh',
@@ -107,12 +102,6 @@ function customizable_colors( $wp_customize ) {
 		'label' => __('Footer Color', 'LearningWordPress'),
 		'section' => 'lwp_standard_colors',
 		'settings' => 'bg-footer',
-	) ) );
-
-  $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'lwp_bgfa_color_control', array(
-		'label' => __('Font Awesome Stack background Color', 'LearningWordPress'),
-		'section' => 'lwp_standard_colors',
-		'settings' => 'bg-fa',
 	) ) );
 
   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'lwp_bgfa_color_control', array(
@@ -239,11 +228,6 @@ function learningWordPress_customize_css() { ?>
       color: <?php echo get_theme_mod('bg-nav-ah'); ?>!important;
       text-decoration: none;
     }
-
-    .fa-stack{
-      color: <?php echo get_theme_mod('bg-fa'); ?>!important;
-    }
-
 
     .navbar-toggler{
         width: 52px;
