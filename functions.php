@@ -203,13 +203,6 @@ add_action('customize_register', 'customizable_colors');
 function learningWordPress_customize_css() { ?>
 
 	<style type="text/css">
-    body{
-        background-color: #E6E6E6;
-    }
-    .content{
-      margin-bottom: 150px!important;
-    }
-
 		.bg-nav {
 			background: <?php echo get_theme_mod('bg-nav'); ?>!important;
 		}
@@ -230,54 +223,9 @@ function learningWordPress_customize_css() { ?>
     }
 
     .navbar-toggler{
-        width: 52px;
-        height: 34px;
         background-color: <?php echo get_theme_mod('bg-nav-ah'); ?>;
         border:none;
     }
-
-    /* Carousel base class */
-    .carousel {
-      margin-bottom: 4rem;
-    }
-    /* Since positioning the image, we need to help out the caption */
-    .carousel-caption {
-      bottom: 3rem;
-      z-index: 10;
-    }
-
-    /* Declare heights because of positioning of img element */
-    .carousel-item {
-      height: 32rem;
-      background-color: #777;
-    }
-    .carousel-item > img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      height: 32rem;
-    }
-
-    .lineheight{
-      line-height:7px;
-    }
-
-    @media (max-width: 575.98px) {
-      .carousel-caption p {
-        margin-bottom: 1.25rem;
-        font-size: 1.25rem;
-        line-height: 1.4;
-      }
-    }
-
-    .social-part .fa{
-        padding-right:20px;
-    }
-    ul li a{
-        margin-right: 20px;
-    }
-
 
 
 	</style>
