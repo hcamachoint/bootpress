@@ -18,7 +18,7 @@
            'theme_location'  => 'top',
            'container'       => 'div',
            'container_id'    => 'bs4navbar',
-           'container_class' => 'collapse navbar-collapse navbar-right justify-content-center',
+           'container_class' => 'collapse navbar-collapse navbar-right', //justify-content-center
            'menu_id'         => false,
            'menu_class'      => 'navbar-nav right', //mr-auto to left
            'depth'           => 2,
