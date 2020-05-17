@@ -18,9 +18,9 @@
            'theme_location'  => 'top',
            'container'       => 'div',
            'container_id'    => 'bs4navbar',
-           'container_class' => 'collapse navbar-collapse navbar-right',
+           'container_class' => 'collapse navbar-collapse navbar-right justify-content-center',
            'menu_id'         => false,
-           'menu_class'      => 'navbar-nav left', //mr-auto to left
+           'menu_class'      => 'navbar-nav right', //mr-auto to left
            'depth'           => 2,
            'fallback_cb'     => 'bs4navwalker::fallback',
            'walker'          => new bs4navwalker()
