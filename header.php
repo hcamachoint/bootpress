@@ -11,7 +11,7 @@
   <body <?php body_class(); ?>>
     <header>
      <nav class="navbar navbar-expand-sm navbar-dark bg-nav shadow">
-       <h2 style="color:#000"><a href="/" class="logo_header"><img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" height="60px" style="margin-bottom:-10px;margin-top:0px;margin-right:10px"/></a></h2>
+       <h2 style="color:#000"><a href="/"><img class="logo_header" src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" height="60px" style="margin-bottom:-10px;margin-top:0px;margin-right:10px"/></a></h2>
        <?php
          wp_nav_menu([
            'menu'            => 'top',
