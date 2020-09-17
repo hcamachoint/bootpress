@@ -11,7 +11,10 @@
   <body <?php body_class(); ?>>
     <header>
      <nav class="navbar navbar-expand-sm navbar-dark bg-nav shadow">
-       <h2 style="color:#000"><a href="/"><img class="logo_header" src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" height="60px" style="margin-bottom:-10px;margin-top:0px;margin-right:10px"/></a></h2>
+       <a href="/" class="navbar-brand logo-page"><img class="logo_header" src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" height="60px" style="margin-bottom:-5;margin-top:0px;margin-right:5"/></a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
+    		  <i class="fa fa-bars iconi"></i>
+    	</button>
        <?php
          wp_nav_menu([
            'menu'            => 'top',
@@ -20,18 +23,12 @@
            'container_id'    => 'bs4navbar',
            'container_class' => 'collapse navbar-collapse navbar-right', //justify-content-center
            'menu_id'         => false,
-           'menu_class'      => 'navbar-nav right', //mr-auto to left
+           'menu_class'      => 'navbar-nav ml-auto', //ml-auto to left
            'depth'           => 2,
            'fallback_cb'     => 'bs4navwalker::fallback',
            'walker'          => new bs4navwalker()
          ]);
        ?>
-         <div class="social-part">
-			 <?php dynamic_sidebar( 'sidebar-2' ); ?>
-         </div>
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
-           <span class="navbar-toggler-icon"></span>
-         </button>
        </div>
      </nav>
     </header>

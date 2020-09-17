@@ -37,7 +37,7 @@ remove_filter ('comment_text', 'wpautop');	//Remueve el filtro de los <p></p> au
 function wpbootstrap_scripts()
 {
 	wp_enqueue_style('bs_css', get_template_directory_uri(). '/css/bootstrap.min.css');
-  wp_enqueue_style('sf_css', get_template_directory_uri(). '/css/sticky-footer-navbar.css');
+  wp_enqueue_style('sf_css', get_template_directory_uri(). '/css/theme.css');
 
 	wp_enqueue_script( 'wpbootstrap-script', get_template_directory_uri() . '/js/jquery.min.js', array(), '1.0.0', true);
 	wp_enqueue_script( 'wpbootstrap-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '1.0.0', true);
@@ -222,10 +222,25 @@ function learningWordPress_customize_css() { ?>
       text-decoration: none;
     }
 
-    .navbar-toggler{
+
+
+		.navbar-toggler .iconi{
+			color: <?php echo get_theme_mod('bg-nav-ah'); ?>;
+		}
+
+
+
+		@media (max-width:575px){
+		  #bs4navbar{
+		    border-top: 3px solid <?php echo get_theme_mod('bg-nav-ah'); ?>;
+		    border-bottom: 3px solid <?php echo get_theme_mod('bg-nav-ah'); ?>;
+		  }
+		}
+
+    /*.navbar-toggler{
         background-color: <?php echo get_theme_mod('bg-nav-ah'); ?>;
         border:none;
-    }
+    }*/
 
 
 	</style>

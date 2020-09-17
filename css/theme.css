@@ -35,3 +35,7 @@ body > .container {
 code {
   font-size: 80%;
 }
+
+.navbar-toggler .iconi:hover{
+  color: #000;
+}
